@@ -29,7 +29,7 @@ const Navbar = () => {
             </div>
             {/* Mobile Menu Toggle */}
             <button
-                className="md:hidden p-2 rounded-md hover:bg-gray-600"
+                className="md:hidden p-4 rounded-md hover:bg-gray-600"
                 onClick={() => setIsOpen(!isOpen)}
             >
                 ☰
