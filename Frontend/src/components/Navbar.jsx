@@ -26,7 +26,7 @@ const Navbar = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-4">
-                <a href="#home" className="px-2 hover:text-gray-400">Home</a>
+                <a href="./Home.jsx" className="px-2 hover:text-gray-400">Home</a>
                 <a href="#about" className="px-2 hover:text-gray-400">About Us</a>
                 <a href="#services" className="px-2 hover:text-gray-400">Services</a>
                 <a href="#career" className="px-2 hover:text-gray-400">Career</a>
