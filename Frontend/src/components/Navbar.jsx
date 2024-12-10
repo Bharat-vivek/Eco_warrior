@@ -65,7 +65,7 @@ const Navbar = () => {
                     <Link to="#contact" className="px-2 hover:text-gray-400">Contact Us</Link>
                     <Link to="#reports" className="px-2 hover:text-gray-400">Reports</Link>
                     <Link to="#blogs" className="px-2 hover:text-gray-400">Blogs</Link>
-                    <Link to="#Login" className="px-2 hover:text-gray-400">Login</Link>
+                    <Link to="/Login" className="px-2 hover:text-gray-400">Login</Link>
                     <Link to="#shop" className="px-2 hover:text-gray-400">Shop</Link>
                     <input
                         type="text"
