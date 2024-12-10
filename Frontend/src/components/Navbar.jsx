@@ -33,6 +33,7 @@ const Navbar = () => {
                 <a href="#contact" className="px-2 hover:text-gray-400">Contact Us</a>
                 <a href="#reports" className="px-2 hover:text-gray-400">Reports</a>
                 <a href="#blogs" className="px-2 hover:text-gray-400">Blogs</a>
+                <a href="/Login" className="px-2 hover:text-gray-400">Login</a>
                 <a href="#shop" className="px-2 hover:text-gray-400">Shop</a>
             </nav>
 
@@ -64,6 +65,7 @@ const Navbar = () => {
                     <a href="#contact" className="px-2 hover:text-gray-400">Contact Us</a>
                     <a href="#reports" className="px-2 hover:text-gray-400">Reports</a>
                     <a href="#blogs" className="px-2 hover:text-gray-400">Blogs</a>
+                    <a href="#Login" className="px-2 hover:text-gray-400">Login</a>
                     <a href="#shop" className="px-2 hover:text-gray-400">Shop</a>
                     <input
                         type="text"

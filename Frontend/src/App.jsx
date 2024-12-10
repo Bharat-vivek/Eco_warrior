@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import Login from './components/Login';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css';
 
 function App() {
@@ -18,6 +20,15 @@ function App() {
     <div className="App">
       <Navbar />
       <Home />
+      <Router>
+        <div className="App">
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Login" element={<Login />} />
+          </Routes>
+        </div>
+      </Router>
       <div style={{ textAlign: 'center', marginTop: '2rem' }}>
         <h2>Message from Backend:</h2>
         <p>{message}</p>
