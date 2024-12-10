@@ -19,16 +19,12 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Home />
-      <Router>
-        <div className="App">
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/Login" element={<Login />} />
-          </Routes>
-        </div>
-      </Router>
+      <Routes>
+        <Route path="/Home" element={<Home />}> </Route>
+        <Route path="/" element={<Home />}> </Route>
+        <Route path="/Login" element={<Login />}> </Route>
+      </Routes>
+
       <div style={{ textAlign: 'center', marginTop: '2rem' }}>
         <h2>Message from Backend:</h2>
         <p>{message}</p>
