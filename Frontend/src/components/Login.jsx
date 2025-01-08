@@ -1,24 +1,25 @@
-// src/components/Login.jsx
 import React, { useState } from 'react';
 
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [role, setRole] = useState('client');
 
     const handleLogin = (e) => {
         e.preventDefault();
         console.log('Email:', email);
         console.log('Password:', password);
+        console.log('Role:', role);
         alert('Login successful (for demonstration purposes)');
     };
 
     return (
         <div className="flex items-center justify-center min-h-screen bg-gray-100">
             <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
-                <h2 className="text-2xl font-bold text-center mb-6">Login</h2>
-                <form onSubmit={handleLogin}>
-                    <div className="mb-4">
-                        <label htmlFor="email" className="block text-sm font-medium mb-2">
+                <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">Login</h2>
+                <form onSubmit={handleLogin} className="flex flex-col items-center">
+                    <div className="mb-4 w-full">
+                        <label htmlFor="email" className="block text-sm font-medium mb-2 text-gray-800">
                             Email Address
                         </label>
                         <input
@@ -27,11 +28,11 @@ const Login = () => {
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             required
-                            className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full px-4 py-2 bg-white text-black border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                         />
                     </div>
-                    <div className="mb-4">
-                        <label htmlFor="password" className="block text-sm font-medium mb-2">
+                    <div className="mb-4 w-full">
+                        <label htmlFor="password" className="block text-sm font-medium mb-2 text-gray-800">
                             Password
                         </label>
                         <input
@@ -40,8 +41,23 @@ const Login = () => {
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             required
-                            className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full px-4 py-2 bg-white text-black border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                         />
+                    </div>
+                    <div className="mb-4 w-full">
+                        <label htmlFor="role" className="block text-sm font-medium mb-2 text-gray-800">
+                            Role
+                        </label>
+                        <select
+                            id="role"
+                            value={role}
+                            onChange={(e) => setRole(e.target.value)}
+                            required
+                            className="w-full px-4 py-2 bg-white text-black border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        >
+                            <option value="admin">Admin</option>
+                            <option value="client">Client</option>
+                        </select>
                     </div>
                     <button
                         type="submit"
@@ -50,7 +66,7 @@ const Login = () => {
                         Login
                     </button>
                 </form>
-                <p className="text-sm text-center text-gray-600 mt-4">
+                <p className="text-sm text-center text-gray-800 mt-4">
                     Don't have an account? <a href="#" className="text-blue-500 hover:underline">Sign up</a>
                 </p>
             </div>

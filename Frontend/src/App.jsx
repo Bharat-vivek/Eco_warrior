@@ -30,6 +30,7 @@ function App() {
         <p>{message}</p>
       </div>
     </div>
+
   );
 }
 

@@ -27,12 +27,13 @@ const Navbar = () => {
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-4">
                 <Link to="/Home" className="px-2 hover:text-gray-400">Home</Link>
-                <Link to="#about" className="px-2 hover:text-gray-400">About Us</Link>
+                <Link to="/signup" className="px-2 hover:text-gray-400">About Us</Link>
                 <Link to="#services" className="px-2 hover:text-gray-400">Services</Link>
                 <Link to="#career" className="px-2 hover:text-gray-400">Career</Link>
                 <Link to="#contact" className="px-2 hover:text-gray-400">Contact Us</Link>
                 <Link to="#reports" className="px-2 hover:text-gray-400">Reports</Link>
                 <Link to="#blogs" className="px-2 hover:text-gray-400">Blogs</Link>
+                <Link to="#Gallery" className="px-2 hover:text-gray-400">Gallery</Link>
                 <Link to="/Login" className="px-2 hover:text-gray-400">Login</Link>
                 <Link to="#shop" className="px-2 hover:text-gray-400">Shop</Link>
             </nav>
@@ -65,6 +66,7 @@ const Navbar = () => {
                     <Link to="#contact" className="px-2 hover:text-gray-400">Contact Us</Link>
                     <Link to="#reports" className="px-2 hover:text-gray-400">Reports</Link>
                     <Link to="#blogs" className="px-2 hover:text-gray-400">Blogs</Link>
+                    <Link to="#Gallery" className="px-2 hover:text-gray-400">Gallery</Link>
                     <Link to="/Login" className="px-2 hover:text-gray-400">Login</Link>
                     <Link to="#shop" className="px-2 hover:text-gray-400">Shop</Link>
                     <input
